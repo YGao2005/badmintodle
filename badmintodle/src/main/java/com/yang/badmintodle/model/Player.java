@@ -4,7 +4,11 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
+@Data
 @Entity
 @Table(name = "player")
 public class Player {
@@ -18,32 +22,18 @@ public class Player {
     @Column(name = "country")
     private String country;
 
-    public Player() {
+    @Column(name = "age")
+    private int age;
 
-    }
+    @Column(name = "ranking")
+    private int ranking;
 
-    public Player(String name, String country) {
-        this.name = name;
-        this.country = country;
-    }
+    @Column(name = "events")
+    private String events;
 
-    public void setId(String id) {
-        this.id = id;
-    }
+    @Column(name = "racket")
+    private String racket;
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getName(){
-        return name;
-    }
-
-    public String getCountry() {
-        return country;
-    }
+    @Column(name = "handedness")
+    private String handedness;
 }

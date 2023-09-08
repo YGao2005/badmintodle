@@ -1,9 +1,11 @@
 package com.yang.badmintodle.controller;
 import com.yang.badmintodle.model.Player;
+import com.yang.badmintodle.model.dto.PlayerDto;
 import com.yang.badmintodle.service.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -17,7 +19,7 @@ public class PlayerController {
     }
 
     @GetMapping
-    public Iterable<Player> getAllPlayers(){
+    public List<PlayerDto> getAllPlayers(){
         return playerService.getAllPlayers();
     }
 
