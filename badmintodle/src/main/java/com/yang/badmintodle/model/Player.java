@@ -31,9 +31,12 @@ public class Player {
     @Column(name = "events")
     private String events;
 
-    @Column(name = "racket")
-    private String racket;
-
     @Column(name = "handedness")
     private String handedness;
+
+    @Column(name = "height")
+    private String height;
+
+    @Column(name = "gender")
+    private String gender;
 }
