@@ -1,0 +1,9 @@
+runtime: java17
+# env: flex
+env_variables:
+  SPRING_PROFILES_ACTIVE: "gcp,mysql"
+handlers:
+  - url: /.*
+    script: this field is required, but ignored
+manual_scaling:
+  instances: 1
