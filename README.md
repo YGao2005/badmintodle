@@ -20,6 +20,14 @@ Over the Summer, I wanted to create a project where I incorporate aspects of fro
 4. Basic programming conventions and organization. E.G: DRY (Don't repeat yourself), migration scripts, etc.
 5. How to use Postman to test the functions of my API and post data.
 6. How to use MYSQL database and write basic SQL to read data inside of my database.
-7. How to use Github to commit and push changes to my code. 
+7. How to use Github to commit and push changes to my code.
 
 
+# How to run the project
+## Prerequisites
+* Install AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+* Install amazon-ecr-credential-helper https://github.com/awslabs/amazon-ecr-credential-helper
+
+Run the command to create a docker image and push to AWS ECR.
+
+`./mvnw compile jib:build`
