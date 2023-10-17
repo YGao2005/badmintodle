@@ -4,3 +4,5 @@ spring:
     username: app
     password: 102802
     driver-class-name: com.mysql.jdbc.Driver
+
+security.apiKey: xyz
